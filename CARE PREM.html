@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CARE Measure Questionnaire</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f7f7f7;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 30px auto;
+      background: #fff;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      text-align: center;
+      color: #333;
+      margin-bottom: 30px;
+    }
+
+    .question {
+      margin-bottom: 30px;
+    }
+
+    .question label {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 5px;
+      color: #333;
+    }
+
+    .question small {
+      display: block;
+      font-weight: normal;
+      color: #777;
+      margin-bottom: 10px;
+    }
+
+    .options {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .option {
+      flex: 1 1 auto;
+    }
+
+    .option input[type="radio"] {
+      display: none;
+    }
+
+    .option label {
+      display: block;
+      text-align: center;
+      padding: 10px 15px;
+      background: #f0f0f0;
+      border-radius: 4px;
+      cursor: pointer;
+      user-select: none;
+      transition: all 0.2s;
+      font-size: 14px;
+    }
+
+    .option input[type="radio"]:checked + label {
+      background: #007bff;
+      color: #fff;
+    }
+
+    .option label:hover {
+      background: #e0e0e0;
+    }
+
+    textarea {
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      resize: vertical;
+      min-height: 100px;
+    }
+
+    .button-container {
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    button {
+      padding: 12px 25px;
+      font-size: 16px;
+      background: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    button:hover {
+      background: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>CARE Measure Questionnaire</h2>
+    <form action="#" method="post">
+
+      <!-- Question 1 -->
+      <div class="question">
+        <label>1. Making you feel at ease</label>
+        <small>(introducing him/herself, explaining position, being friendly and warm towards you, treating you with respect; not cold or abrupt)</small>
+        <div class="options">
+          <div class="option"><input type="radio" id="q1-poor" name="q1" value="Poor" required><label for="q1-poor">Poor</label></div>
+          <div class="option"><input type="radio" id="q1-fair" name="q1" value="Fair"><label for="q1-fair">Fair</label></div>
+          <div class="option"><input type="radio" id="q1-good" name="q1" value="Good"><label for="q1-good">Good</label></div>
+          <div class="option"><input type="radio" id="q1-verygood" name="q1" value="Very Good"><label for="q1-verygood">Very Good</label></div>
+          <div class="option"><input type="radio" id="q1-excellent" name="q1" value="Excellent"><label for="q1-excellent">Excellent</label></div>
+          <div class="option"><input type="radio" id="q1-na" name="q1" value="Does not Apply"><label for="q1-na">Does not Apply</label></div>
+        </div>
+      </div>
+
+      <!-- Question 2 -->
+      <div class="question">
+        <label>2. Letting you tell your "story"</label>
+        <small>(giving you time to fully describe your condition in your own words; not interrupting, rushing or diverting you)</small>
+        <div class="options">
+          <div class="option"><input type="radio" id="q2-poor" name="q2" value="Poor" required><label for="q2-poor">Poor</label></div>
+          <div class="option"><input type="radio" id="q2-fair" name="q2" value="Fair"><label for="q2-fair">Fair</label></div>
+          <div class="option"><input type="radio" id="q2-good" name="q2" value="Good"><label for="q2-good">Good</label></div>
+          <div class="option"><input type="radio" id="q2-verygood" name="q2" value="Very Good"><label for="q2-verygood">Very Good</label></div>
+          <div class="option"><input type="radio" id="q2-excellent" name="q2" value="Excellent"><label for="q2-excellent">Excellent</label></div>
+          <div class="option"><input type="radio" id="q2-na" name="q2" value="Does not Apply"><label for="q2-na">Does not Apply</label></div>
+        </div>
+      </div>
+
+      <!-- Question 3 -->
+      <div class="question">
+        <label>3. Really listening</label>
+        <small>(paying close attention to what you were saying; not looking at the notes or computer as you were talking)</small>
+        <div class="options">
+          <div class="option"><input type="radio" id="q3-poor" name="q3" value="Poor" required><label for="q3-poor">Poor</label></div>
+          <div class="option"><input type="radio" id="q3-fair" name="q3" value="Fair"><label for="q3-fair">Fair</label></div>
+          <div class="option"><input type="radio" id="q3-good" name="q3" value="Good"><label for="q3-good">Good</label></div>
+          <div class="option"><input type="radio" id="q3-verygood" name="q3" value="Very Good"><label for="q3-verygood">Very Good</label></div>
+          <div class="option"><input type="radio" id="q3-excellent" name="q3" value="Excellent"><label for="q3-excellent">Excellent</label></div>
+          <div class="option"><input type="radio" id="q3-na" name="q3" value="Does not Apply"><label for="q3-na">Does not Apply</label></div>
+        </div>
+      </div>
+
+      <!-- Question 4 -->
+      <div class="question">
+        <label>4. Being interested in you as a whole person</label>
+        <small>(asking/knowing relevant details about your life, your situation; not treating you as "just a number")</small>
+        <div class="options">
+          <div class="option"><input type="radio" id="q4-poor" name="q4" value="Poor" required><label for="q4-poor">Poor</label></div>
+          <div class="option"><input type="radio" id="q4-fair" name="q4" value="Fair"><label for="q4-fair">Fair</label></div>
+          <div class="option"><input type="radio" id="q4-good" name="q4" value="Good"><label for="q4-good">Good</label></div>
+          <div class="option"><input type="radio" id="q4-verygood" name="q4" value="Very Good"><label for="q4-verygood">Very Good</label></div>
+          <div class="option"><input type="radio" id="q4-excellent" name="q4" value="Excellent"><label for="q4-excellent">Excellent</label></div>
+          <div class="option"><input type="radio" id="q4-na" name="q4" value="Does not Apply"><label for="q4-na">Does not Apply</label></div>
+        </div>
+      </div>
+
+      <!-- Question 5 -->
+      <div class="question">
+        <label>5. Fully understanding your concerns</label>
+        <small>(communicating that he/she had accurately understood your concerns and anxieties; not overlooking or dismissing anything)</small>
+        <div class="options">
+          <div class="option"><input type="radio" id="q5-poor" name="q5" value="Poor" required><label for="q5-poor">Poor</label></div>
+          <div class="option"><input type="radio" id="q5-fair" name="q5" value="Fair"><label for="q5-fair">Fair</label></div>
+          <div class="option"><input type="radio" id="q5-good" name="q5" value="Good"><label for="q5-good">Good</label></div>
+          <div class="option"><input type="radio" id="q5-verygood" name="q5" value="Very Good"><label for="q5-verygood">Very Good</label></div>
+          <div class="option"><input type="radio" id="q5-excellent" name="q5" value="Excellent"><label for="q5-excellent">Excellent</label></div>
+          <div class="option"><input type="radio" id="q5-na" name="q5" value="Does not Apply"><label for="q5-na">Does not Apply</label></div>
+        </div>
+      </div>
+
+      <!-- Question 6 -->
+      <div class="question">
+        <label>6. Showing care and compassion</label>
+        <small>(seeming genuinely concerned, connecting with you on a human level; not being indifferent or "detached")</small>
+        <div class="options">
+          <div class="option"><input type="radio" id="q6-poor" name="q6" value="Poor" required><label for="q6-poor">Poor</label></div>
+          <div class="option"><input type="radio" id="q6-fair" name="q6" value="Fair"><label for="q6-fair">Fair</label></div>
+          <div class="option"><input type="radio" id="q6-good" name="q6" value="Good"><label for="q6-good">Good</label></div>
+          <div class="option"><input type="radio" id="q6-verygood" name="q6" value="Very Good"><label for="q6-verygood">Very Good</label></div>
+          <div class="option"><input type="radio" id="q6-excellent" name="q6" value="Excellent"><label for="q6-excellent">Excellent</label></div>
+          <div class="option"><input type="radio" id="q6-na" name="q6" value="Does not Apply"><label for="q6-na">Does not Apply</label></div>
+        </div>
+      </div>
+
+      <!-- Question 7 -->
+      <div class="question">
+        <label>7. Being positive</label>
+        <small>(having a positive approach and attitude; being honest but not negative about your problems)</small>
+        <div class="options">
+          <div class="option"><input type="radio" id="q7-poor" name="q7" value="Poor" required><label for="q7-poor">Poor</label></div>
+          <div class="option"><input type="radio" id="q7-fair" name="q7" value="Fair"><label for="q7-fair">Fair</label></div>
+          <div class="option"><input type="radio" id="q7-good" name="q7" value="Good"><label for="q7-good">Good</label></div>
+          <div class="option"><input type="radio" id="q7-verygood" name="q7" value="Very Good"><label for="q7-verygood">Very Good</label></div>
+          <div class="option"><input type="radio" id="q7-excellent" name="q7" value="Excellent"><label for="q7-excellent">Excellent</label></div>
+          <div class="option"><input type="radio" id="q7-na" name="q7" value="Does not Apply"><label for="q7-na">Does not Apply</label></div>
+        </div>
+      </div>
+
+      <!-- Question 8 -->
+      <div class="question">
+        <label>8. Explaining things clearly</label>
+        <small>(fully answering your questions; explaining clearly, giving you adequate information; not being vague)</small>
+        <div class="options">
+          <div class="option"><input type="radio" id="q8-poor" name="q8" value="Poor" required><label for="q8-poor">Poor</label></div>
+          <div class="option"><input type="radio" id="q8-fair" name="q8" value="Fair"><label for="q8-fair">Fair</label></div>
+          <div class="option"><input type="radio" id="q8-good" name="q8" value="Good"><label for="q8-good">Good</label></div>
+          <div class="option"><input type="radio" id="q8-verygood" name="q8" value="Very Good"><label for="q8-verygood">Very Good</label></div>
+          <div class="option"><input type="radio" id="q8-excellent" name="q8" value="Excellent"><label for="q8-excellent">Excellent</label></div>
+          <div class="option"><input type="radio" id="q8-na" name="q8" value="Does not Apply"><label for="q8-na">Does not Apply</label></div>
+        </div>
+      </div>
+
+      <!-- Question 9 -->
+      <div class="question">
+        <label>9. Helping you to take control</label>
+        <small>(exploring with you what you can do to improve your health yourself; encouraging rather than "lecturing" you)</small>
+        <div class="options">
+          <div class="option"><input type="radio" id="q9-poor" name="q9" value="Poor" required><label for="q9-poor">Poor</label></div>
+          <div class="option"><input type="radio" id="q9-fair" name="q9" value="Fair"><label for="q9-fair">Fair</label></div>
+          <div class="option"><input type="radio" id="q9-good" name="q9" value="Good"><label for="q9-good">Good</label></div>
+          <div class="option"><input type="radio" id="q9-verygood" name="q9" value="Very Good"><label for="q9-verygood">Very Good</label></div>
+          <div class="option"><input type="radio" id="q9-excellent" name="q9" value="Excellent"><label for="q9-excellent">Excellent</label></div>
+          <div class="option"><input type="radio" id="q9-na" name="q9" value="Does not Apply"><label for="q9-na">Does not Apply</label></div>
+        </div>
+      </div>
+
+      <!-- Question 10 -->
+      <div class="question">
+        <label>10. Making a plan of action with you</label>
+        <small>(discussing the options, involving you in decisions as much as you want to be involved; not ignoring your views)</small>
+        <div class="options">
+          <div class="option"><input type="radio" id="q10-poor" name="q10" value="Poor" required><label for="q10-poor">Poor</label></div>
+          <div class="option"><input type="radio" id="q10-fair" name="q10" value="Fair"><label for="q10-fair">Fair</label></div>
+          <div class="option"><input type="radio" id="q10-good" name="q10" value="Good"><label for="q10-good">Good</label></div>
+          <div class="option"><input type="radio" id="q10-verygood" name="q10" value="Very Good"><label for="q10-verygood">Very Good</label></div>
+          <div class="option"><input type="radio" id="q10-excellent" name="q10" value="Excellent"><label for="q10-excellent">Excellent</label></div>
+          <div class="option"><input type="radio" id="q10-na" name="q10" value="Does not Apply"><label for="q10-na">Does not Apply</label></div>
+        </div>
+      </div>
+
+      <!-- Additional Comments -->
+      <div class="question">
+        <label for="comments">Comments:</label>
+        <textarea id="comments" name="comments" placeholder="If you would like to add further comments on this consultation, please do so here."></textarea>
+      </div>
+
+      <!-- Submit -->
+      <div class="button-container">
+        <button type="submit">Submit</button>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
